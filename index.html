@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		/>
+		<script src="./assets/js/main.js" defer></script>
+		<title>Практики по JS2_2</title>
+	</head>
+	<body>
+		<div class="container">
+			<!-- ///выпадающее меню практика №1 -->
+			<header>
+				<div class="logoPractice"><a href="">GetHUB</a></div>
+				<div class="headerContent">
+					<div class="menu">
+						<div class="menuBtn b1">
+							Программирование +
+							<!-- <i
+								class="fa-sharp fa-solid fa-chevron-down"
+								style="color: #d28519"
+							></i> -->
+						</div>
+						<ul class="menuList">
+							<li><a href="#">JS</a></li>
+							<li><a href="#">C#</a></li>
+							<li><a href="#">Python</a></li>
+						</ul>
+					</div>
+					<div class="menu">
+						<div class="menuBtn2 b1">
+							HTML +
+							<!-- <i
+								class="fa-sharp fa-solid fa-chevron-down"
+								style="color: #d28519"
+							></i> -->
+						</div>
+						<ul class="menuList2">
+							<li><a href="#">Основы</a></li>
+							<li>
+								<a href="#"
+									>Продвинутый <br />
+									уровень</a
+								>
+							</li>
+						</ul>
+					</div>
+					<div class="menu">
+						<div class="menuBtn3 b1">
+							CSS +
+							<!-- <i
+								class="fa-sharp fa-solid fa-chevron-down"
+								style="color: #d28519"
+							></i> -->
+						</div>
+						<ul class="menuList3">
+							<li><a href="#">Основы</a></li>
+							<li>
+								<a href="#"
+									>Продвинутый <br />
+									уровень</a
+								>
+							</li>
+							<li>
+								<a href="#"
+									>Интересные <br />
+									решения</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+
+			<!-- //создание слайдера практика №2-->
+			<div class="flex-wrapper">
+				<div class="slider-wrapper">
+					<div class="slide active">
+						<img src="assets/img/s1.jpg" alt="" />
+					</div>
+					<div class="slide">
+						<img src="assets/img/s2.jpg" alt="" />
+					</div>
+					<div class="slide">
+						<img src="assets/img/s3.jpg" alt="" />
+					</div>
+					<div id="btn-prev"></div>
+					<div id="btn-next"></div>
+				</div>
+			</div>
+			<div class="dots-wrapper">
+				<span class="dot active"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</div>
+
+			<!-- ///аккордеон практика №3-->
+
+			<div class="accordions">
+				<div class="accordion">
+					<!-- //заголовок и span для отрисовки + и х -->
+					<div data-tab="tab-1" class="accordion-title a1">
+						<h3>Python</h3>
+						<span></span>
+					</div>
+					<!-- //информация, которая выйдет при нажатии-->
+					<div id="tab-1" class="accordion-content">
+						Python — это язык программирования, который широко
+						используется в интернет-приложениях, разработке
+						программного обеспечения, науке о данных и машинном
+						обучении (ML). Разработчики используют Python, потому
+						что он эффективен, прост в изучении и работает на разных
+						платформах. Программы на языке Python можно скачать
+						бесплатно, они совместимы со всеми типами систем и
+						повышают скорость разработки.
+					</div>
+				</div>
+
+				<div class="accordion">
+					<!-- //заголовок и span для отрисовки + и х -->
+					<div data-tab="tab-2" class="accordion-title">
+						<h3>JS</h3>
+						<span></span>
+					</div>
+					<!-- //информация, которая выйдет при нажатии-->
+					<div id="tab-2" class="accordion-content">
+						Мультипарадигменный язык программирования, который
+						поддерживает объектно-ориентированный, императивный и
+						функциональный стили.
+					</div>
+				</div>
+
+				<div class="accordion">
+					<!-- //заголовок и span для отрисовки + и х -->
+					<div data-tab="tab-3" class="accordion-title">
+						<h3>C#</h3>
+						<span></span>
+					</div>
+					<!-- //информация, которая выйдет при нажатии-->
+					<div id="tab-3" class="accordion-content">
+						C# (произносится как "си шарп") — современный
+						объектно-ориентированный и типобезопасный язык
+						программирования. C# позволяет разработчикам создавать
+						разные типы безопасных и надежных приложений,
+						выполняющихся в .NET. C# относится к широко известному
+						семейству языков C, и покажется хорошо знакомым любому,
+						кто работал с C, C++, Java или JavaScript.
+					</div>
+				</div>
+			</div>
+
+			<!-- ////вкладки -->
+			<div class="vkladka">
+				<div class="tab_header">
+					<div class="tab_heder_button tab_button_active">
+						Апельсин
+					</div>
+					<div class="tab_heder_button">Яблоко</div>
+					<div class="tab_heder_button">Банан</div>
+				</div>
+				<div class="tab_body tab_body_active">
+					Плод апельсинного дерева. Представляет собой гесперидий -
+					многогнёздную ягоду. Покрыт шероховатой оранжевой кожурой.
+					Семена погружены в мякоть гнёзд. Размер, форма и окраска
+					кожуры могут сильно отличаться в зависимости от сорта
+					растения.
+				</div>
+				<div class="tab_body">
+					Я́блоко — сочный плод яблони, который употребляется в пищу в
+					свежем и запеченном виде, служит сырьём в кулинарии и для
+					приготовления напитков. Наибольшее распространение получила
+					яблоня домашняя, реже выращивают яблоню сливолистную. Размер
+					красных, зелёных или жёлтых шаровидных плодов 5—13 см в
+					диаметре. Происходит из Центральной Азии, где до сих пор
+					произрастает дикорастущий предок яблони домашней — яблоня
+					Сиверса.
+				</div>
+				<div class="tab_body">
+					A банан это удлиненные, съедобные фрукты – ботанически ягода
+					производится несколько видов крупных травянистые цветущие
+					растения в род Муса. В некоторых странах, бананы используют
+					для приготовления можно назвать "подорожники", отличая их от
+					десерт из бананов. Плод переменный размер, цвет, и
+					стойкость, но, как правило, вытянутая и изогнутая, с мягкой
+					мякотью богат крахмал покрывается коркой, которая может быть
+					зеленого, желтого, красного, фиолетового или коричневого
+					цвета при созревании.
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
